@@ -1,0 +1,187 @@
+/* Estilos comuns a todas as telas */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.topbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5rem;
+	position: relative;
+}
+
+.text-logo {
+	font-family: 'Roboto', sans-serif;
+	color: #09476F;
+	font-style: italic;
+	font-size: 2.8rem;
+	padding: 0.7rem;
+	text-align: center;
+}
+
+.main {
+	padding: 1rem;
+}
+
+.lab-text-decrypted,
+.lab-text-encrypted {
+	font-size: 20px;
+	font-weight: 600;
+	color: #09476F;
+	text-align: center;
+}
+
+textarea[name="decrypted-text"],
+textarea[name="encrypted-text"] {
+	margin-top: 2rem;
+	width: 100%;
+	color: #09476F;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 1.5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+textarea:focus {
+	outline: none;
+	border-color: #0A3871;
+	box-shadow: 0 0 0 2px rgba(10, 56, 113, 0.2);
+}
+
+.rodape-formulario {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.alerta {
+	width: 20px;
+	margin-right: 0.5rem;
+}
+
+.alerta-texto {
+	font-size: 14px;
+	color: #09476F;
+}
+
+footer {
+	padding: 16px;
+	text-align: center;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+}
+
+footer li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 16px;
+}
+
+footer li img {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	border: 1px solid #E5E5E5;
+	background-color: #FFFFFF;
+	padding: 8px;
+}
+
+footer span {
+	margin-top: 8px;
+	font-size: 14px;
+	color: #09476F;
+}
+
+/* Estilos para telas de celular */
+@media screen and (max-width: 767px) {
+	.text-logo {
+		font-size: 2rem;
+	}
+
+	.main {
+		height: auto;
+	}
+
+	.lab-text-decrypted,
+	.lab-text-encrypted {
+		position: static;
+		margin-left: 0;
+		margin-bottom: 0.5rem;
+		font-size: 16px;
+	}
+
+	textarea[name="decrypted-text"],
+	textarea[name="encrypted-text"] {
+		width: 100%;
+	}
+}
+
+/* Estilos para telas de tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.text-logo {
+		font-size: 2.5rem;
+	}
+
+	.main {
+		height: auto;
+	}
+
+	.lab-text-decrypted,
+	.lab-text-encrypted {
+		position: static;
+		margin-left: 0;
+		margin-bottom: 0.5rem;
+		font-size: 18px;
+	}
+
+	textarea[name="decrypted-text"],
+	textarea[name="encrypted-text"] {
+		width: 100%;
+	}
+}
+
+/* Estilos para telas de computador/notebook */
+@media screen and (min-width: 1024px) {
+	.text-logo {
+		font-size: 2.8rem;
+	}
+
+	.main {
+		height: 332px;
+	}
+
+	.lab-text-decrypted,
+	.lab-text-encrypted {
+		position: absolute;
+		margin-left: 7rem;
+		font-size: 20px;
+	}
+
+	textarea[name="decrypted-text"],
+	textarea[name="encrypted-text"] {
+		width: calc(50% - 1rem);
+	}
+}

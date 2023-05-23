@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alura Decodificador</title>
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,300;1,400&display=swap"
+		rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./assets/css/global.css">
+
+</head>
+
+<body>
+
+	<!-- Cabeçalho -->
+	<header>
+		<section class="topbar">
+
+			<h1 class="text-logo">Decodificador Alura</h1>
+
+		</section>
+
+	</header>
+
+	<main>
+		<span class="lab-text-decrypted form-label">Texto normal</span>
+		<label for="decrypted-text"></label>
+		<textarea name="decrypted-text" id="decrypted-text" cols="35" rows="4" placeholder="Digite o texto"></textarea>
+
+		<span class="lab-text-encrypted form-label">Texto criptografado</span>
+		<label for="encrypted-text"></label>
+		<textarea name="encrypted-text" id="encrypted-text" cols="35" rows="4"
+			placeholder="Texto descriptografado"></textarea>
+
+		<div class="rodape-formulario">
+			<img class="alerta" src="./images/alerta.svg" alt="alerta de informação">
+			<span class="alerta-texto">Apenas letras minúsculas e sem acento</span>
+		</div>
+
+	</main>
+
+	<footer>
+		<div>
+			<ul>
+				<li>
+					<a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank"><img
+							src="./images/one.png" alt="logo do One Next Education"></a>
+					<span class="footer-one">ONE</span>
+				</li>
+
+				<li>
+					<a href="https://www.alura.com.br/" target="_blank"><img class="footer-alura"
+							src="./images/alura.svg" alt="logo minimalista da Alura"></a>
+					<span class="alura">Alura</span>
+				</li>
+
+				<li>
+					<a href="https://br.linkedin.com/in/loyannemoreira" target="_blank"><img src="./images/linkedin.png"
+							alt="logo do Linkedin"></a>
+					<span class="footer-linkedin">Linkedin</span>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- JavaScript -->
+	<script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
